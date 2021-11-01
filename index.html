@@ -31,28 +31,9 @@
     <body style="background-color: #121212;">
         <div class="center">
             <h3>Roblox is in maintance mode for...</h3>
-            <h1 id="time-label"><b>0h 0m 0s</b></h1>
-            <h3>Rest In Peace, roblox</h3>
-            <h2> Note, when roblox will come up, this site will be offline. </h2>
+            <h1><b>0h 0m 0s</b></h1>
+            
         </div>
         <p class="bottom">Edited by <b>NotAspire#0001</b>, made by <b>The_Sink#4096</b>, Repo available <a href="https://github.com/the-sink/robloxdown" target="_blank">here.</a></p>
-        <script type="text/javascript">
-            const label = document.getElementById('time-label');
-            const start = 1635462000000;
-
-            setInterval(function(){
-                var now = new Date().getTime();
-                var delta = now - start;
-
-                var ms = delta % 1000;
-                delta = (delta - ms) / 1000;
-                var secs = delta % 60;
-                delta = (delta - secs) / 60;
-                var mins = delta % 60;
-                var hrs = (delta - mins) / 60;
-
-                label.innerHTML = hrs + " hours, " + mins + " minutes, and " + secs + " seconds";
-            }, 100);
-        </script>
     </body>
 </html>
